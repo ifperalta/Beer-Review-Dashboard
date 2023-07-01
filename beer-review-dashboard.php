@@ -14,7 +14,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Beer Review
- * Plugin URI:        https://https://github.com/ifperalta/Beer-Review-Plugin
+ * Plugin URI:        https://github.com/ifperalta/Beer-Review-Plugin
  * Description:       A beer review dashboard plugin
  * Version:           1.0.0
  * Author:            Ian Peralta
