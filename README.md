@@ -1,10 +1,7 @@
-
 ## Demo
 - it's coming soon
 
 ## Overview 
-
-This plugin is using Untappd API. 
 
 ## How to run 
 - Cloning the repository
