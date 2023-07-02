@@ -47,7 +47,7 @@ if(isset($_POST['submit-import'])){
                                 <?php 
                                 $reviews = count(getReviewData());
                                 if($reviews > 0){
-                                    echo $reviews - 1 . " Reviews Found";
+                                    echo $reviews . " Reviews Found";
                                 }else{
                                     echo "Nothing found - please check the API configurations";
                                 }  

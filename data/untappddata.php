@@ -6,26 +6,26 @@ class UntappdData extends UntappdApi
     
     private function filterData()
     {   
-        $limit = 0;
+        $x = 1;
         $items =  $this->reviewdata['response']['checkins']['items'];
 
         foreach($items as $item){
-            if($limit <= 10){
-                $this->cleandata[$limit]["created"] = $item['created_at'];
-                $this->cleandata[$limit]["rating"] = $item['rating_score'];
-                $this->cleandata[$limit]["checkin_comment"] = $item['checkin_comment'];
-                $this->cleandata[$limit]["first_name"] = $item["user"]['first_name'];
-                $this->cleandata[$limit]["last_name"] = $item["user"]['last_name'];
-                $this->cleandata[$limit]["user_avatar"] = $item["user"]['user_avatar'];
-                $this->cleandata[$limit]["brewery_name"] = $item['brewery']['brewery_name'];
-                $this->cleandata[$limit]["beer_name"] = $item['beer']['beer_name'];
-                $this->cleandata[$limit]["beer_style"] = $item['beer']['beer_style'];
-                $this->cleandata[$limit]["beer_abv"] = $item['beer']['beer_abv'];
-                $this->cleandata[$limit]["beer_ibu"] = $item['beer']['beer_ibu'];
-                $this->cleandata[$limit]["beer_label"] = $item['beer']['beer_label'];
-                $this->cleandata[$limit]["brewery_label"] = $item['brewery']['brewery_label'];
+            if($x <= $this->limit){
+                $this->cleandata[$x]["created"] = $item['created_at'];
+                $this->cleandata[$x]["rating"] = $item['rating_score'];
+                $this->cleandata[$x]["checkin_comment"] = $item['checkin_comment'];
+                $this->cleandata[$x]["first_name"] = $item["user"]['first_name'];
+                $this->cleandata[$x]["last_name"] = $item["user"]['last_name'];
+                $this->cleandata[$x]["user_avatar"] = $item["user"]['user_avatar'];
+                $this->cleandata[$x]["brewery_name"] = $item['brewery']['brewery_name'];
+                $this->cleandata[$x]["beer_name"] = $item['beer']['beer_name'];
+                $this->cleandata[$x]["beer_style"] = $item['beer']['beer_style'];
+                $this->cleandata[$x]["beer_abv"] = $item['beer']['beer_abv'];
+                $this->cleandata[$x]["beer_ibu"] = $item['beer']['beer_ibu'];
+                $this->cleandata[$x]["beer_label"] = $item['beer']['beer_label'];
+                $this->cleandata[$x]["brewery_label"] = $item['brewery']['brewery_label'];
             }
-            $limit++;
+            $x++;
         }        
     }
        

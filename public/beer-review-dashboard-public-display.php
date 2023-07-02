@@ -1,10 +1,7 @@
 <?php
 
 /**
- * Provide a public-facing view for the plugin
- * 
- * List all the beer information along with user reviews
- * 
+ * returns the beer and brewery information 
  */
 
 function beerInformation(){
@@ -51,6 +48,11 @@ function beerInformation(){
         $limit++;
     }    
 }
+
+
+/**
+ * returns the user review and information 
+ */
 
 function userReview(){
     $user_reviews = "";

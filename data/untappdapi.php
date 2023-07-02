@@ -13,6 +13,8 @@ class UntappdApi
     public $storagefile;
     public $request;
 
+    public $limit;
+
     public function __construct($config) 
     {
         $this->client_id = $config["client_id"];
@@ -25,6 +27,8 @@ class UntappdApi
         
         $this->storagefile = $config["storagefile"];
         $this->request = $config["request"];
+
+        $this->limit = $config["limit"];
     }
     
     public function userCredentials(){

@@ -3,8 +3,6 @@
 
 ## Overview 
 
-Get 10 latest review. The plugin is using is using Untappd API. 
-
 ## How to run 
 - Cloning the repository
   - paste this to your /plugin directory
