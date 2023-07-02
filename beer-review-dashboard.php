@@ -25,58 +25,45 @@
  * Domain Path:       /languages
  */
 
-// If this file is called directly, abort.
+include plugin_dir_path( __FILE__ ) . 'utilities/class-beer-review-dashboard-loader.php';
+include plugin_dir_path( __FILE__ ) . 'admin/class-beer-review-dashboard-admin.php';
+include plugin_dir_path( __FILE__ ) . 'public/class-beer-review-dashboard-public.php';
+include plugin_dir_path( __FILE__ ) . 'utilities/class-beer-review-dashboard.php';
+include plugin_dir_path( __FILE__ ) . 'reviewdata/untappdclass.php';
+include plugin_dir_path( __FILE__ ) . 'reviewdata/api-config.php';
+include plugin_dir_path( __FILE__ ) . 'utilities/utils.php';
+
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-/**
- * Currently plugin version.
- * Start at version 1.0.0 and use SemVer - https://semver.org
- * Rename this for your plugin and update it as you release new versions.
- */
 define( 'BEER_REVIEW_DASHBOARD_VERSION', '1.0.0' );
 
-/**
- * The code that runs during plugin activation.
- * This action is documented in includes/class-beer-review-dashboard-activator.php
- */
 function activate_beer_review_dashboard() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-beer-review-dashboard-activator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'utilities/class-beer-review-dashboard-activator.php';
 	Beer_Review_Dashboard_Activator::activate();
 }
 
-/**
- * The code that runs during plugin deactivation.
- * This action is documented in includes/class-beer-review-dashboard-deactivator.php
- */
 function deactivate_beer_review_dashboard() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-beer-review-dashboard-deactivator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'utilities/class-beer-review-dashboard-deactivator.php';
 	Beer_Review_Dashboard_Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_beer_review_dashboard' );
 register_deactivation_hook( __FILE__, 'deactivate_beer_review_dashboard' );
 
-/**
- * The core plugin class that is used to define internationalization,
- * admin-specific hooks, and public-facing site hooks.
- */
-require plugin_dir_path( __FILE__ ) . 'includes/class-beer-review-dashboard.php';
-
-/**
- * Begins execution of the plugin.
- *
- * Since everything within the plugin is registered via hooks,
- * then kicking off the plugin from this point in the file does
- * not affect the page life cycle.
- *
- * @since    1.0.0
- */
 function run_beer_review_dashboard() {
-
 	$plugin = new Beer_Review_Dashboard();
 	$plugin->run();
-
 }
 run_beer_review_dashboard();
+
+function review_admin_menu(){
+	add_menu_page('Review Settings', 'Review Settings', 'administrator', 'review-settings', '' );
+	add_submenu_page('Review Settings', 'Review Settings', 'Review Settings', 'administrator', 'review-settings', 'reviewsettings');	
+}
+add_action('admin_menu', 'review_admin_menu');
+
+function reviewsettings(){ 
+	require_once plugin_dir_path( __FILE__ ) . 'admin/review-dashboard.php';
+}

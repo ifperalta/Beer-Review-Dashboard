@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Fired during plugin deactivation
+ * Fired during plugin activation
  *
  * @link       https://ianperalta.dev
  * @since      1.0.0
@@ -11,25 +11,19 @@
  */
 
 /**
- * Fired during plugin deactivation.
+ * Fired during plugin activation.
  *
- * This class defines all code necessary to run during the plugin's deactivation.
+ * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
  * @package    Beer_Review_Dashboard
  * @subpackage Beer_Review_Dashboard/includes
  * @author     Ian Peralta <ifransperalta@gmail.com>
- */
-class Beer_Review_Dashboard_Deactivator {
+*/
 
-	/**
-	 * Short Description. (use period)
-	 *
-	 * Long Description.
-	 *
-	 * @since    1.0.0
-	 */
-	public static function deactivate() {
+class Beer_Review_Dashboard_Activator {
+
+	public static function activate() {
 
 	}
 

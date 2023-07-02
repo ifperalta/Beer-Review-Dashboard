@@ -1,4 +1,43 @@
-/**
- * All of the CSS for your admin-specific functionality should be
- * included in this file.
- */
+.container{
+    width: 1000px;
+    padding: 25px;
+    margin: 35px;
+    background: #FFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.div-wrapper{
+    float: left;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+
+.div-wrapper 
+input, 
+select {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+
+.labeltitle{
+    font-size: 12pt !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: bold !important;
+}
+
+
+.btsub{
+    float: right !important;
+    width: 150px !important;
+    padding: 15px !important;
+}
