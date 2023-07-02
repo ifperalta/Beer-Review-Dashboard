@@ -29,8 +29,9 @@ include plugin_dir_path( __FILE__ ) . 'utilities/class-beer-review-dashboard-loa
 include plugin_dir_path( __FILE__ ) . 'admin/class-beer-review-dashboard-admin.php';
 include plugin_dir_path( __FILE__ ) . 'public/class-beer-review-dashboard-public.php';
 include plugin_dir_path( __FILE__ ) . 'utilities/class-beer-review-dashboard.php';
-include plugin_dir_path( __FILE__ ) . 'reviewdata/untappdclass.php';
-include plugin_dir_path( __FILE__ ) . 'reviewdata/api-config.php';
+include plugin_dir_path( __FILE__ ) . 'data/api.php';
+include plugin_dir_path( __FILE__ ) . 'data/untappdapi.php';
+include plugin_dir_path( __FILE__ ) . 'data/untappddata.php';
 include plugin_dir_path( __FILE__ ) . 'utilities/utils.php';
 
 if ( ! defined( 'WPINC' ) ) {

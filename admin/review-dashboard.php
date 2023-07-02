@@ -9,31 +9,56 @@ if(isset($_POST['submit'])){
     saveApiSettings($config);
 }
 
-$reviews = getData();
-
+if(isset($_POST['submit-import'])){
+    runDataImport();
+}
 ?>
 <div class="container">
         <div class="div-wrapper">
             <div class="row">
                 <div class="div-wrapper">
-                    <h3>API Configuration</h3>
+                    <h2>Untappd Configurations</h2>
                     <?php echo $message; ?>   
                     <form action="" class="form-submit" method="post">   
                         <input type="text" name="clientid" placeholder="Client ID" value="<?php echo get_option("clientid") ?>" />
                         <input type="text" name="clientsecret" placeholder="Client Secret"  value="<?php echo  get_option("clientsecret"); ?>" />
-                        <input type="text" name="reviewuserid" placeholder="User ID"  value="<?php echo  get_option("reviewuserid"); ?>" />
-                        <input type="text" name="reviewlimit" placeholder="Limit"  value="<?php echo  get_option("reviewlimit"); ?>" />
-                        <input type="submit" name="submit" class="btsub" value="Save" />
+
+                        <div class="row-half">
+                            <label>User ID</label>
+                            <input type="text" class="short-field" name="reviewuserid" placeholder="User ID"  value="<?php echo  get_option("reviewuserid"); ?>" />
+                        </div>
+                        <div class="row-half">
+                            <label>Number of reviews to display</label>
+                            <input type="text" class="short-field" name="reviewlimit" placeholder="Limit"  value="<?php echo  get_option("reviewlimit"); ?>" />
+                        </div>
+                        <input type="submit" name="submit" class="btsub" value="Save Configurations" />
                     </form>
                 </div> 
 
                 <div class="div-wrapper">
-                    <h3>Shortcode</h3>
+                    <h2>Shortcode</h2>
                     <input type="text" name="clientsecret" id="inputfield" placeholder="Client Secret"  value="['beer-review']" />
                 </div> 
 
                 <div class="div-wrapper">
-                    <h3><?php echo count($reviews) - 1; ?> reviews found </h3>
+                    <div class="row-half text-center">
+                            <h1>Import Review Data</h1>
+                            <h3>
+                                <?php 
+                                $reviews = count(getReviewData());
+                                if($reviews > 0){
+                                    echo $reviews - 1 . " Reviews Found";
+                                }else{
+                                    echo "Nothing found - please check the API configurations";
+                                }  
+                            ?>
+                            </h3>
+                    </div>
+                    <div class="row-half">
+                        <form action="" class="form-submit" method="post">   
+                            <input type="submit" name="submit-import" class="btsub" value="Import Untappd Reviews" />
+                        </form>
+                    </div>
                 </div> 
             </div>      
         </div>    
