@@ -3,7 +3,7 @@
 
 ## Overview 
 
-This plugin is using Untappd API. 
+Get 10 latest review. The plugin is using is using Untappd API. 
 
 ## How to run 
 - Cloning the repository
