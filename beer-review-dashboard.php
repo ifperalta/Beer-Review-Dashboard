@@ -28,6 +28,7 @@
 include plugin_dir_path( __FILE__ ) . 'utilities/class-beer-review-dashboard-loader.php';
 include plugin_dir_path( __FILE__ ) . 'admin/class-beer-review-dashboard-admin.php';
 include plugin_dir_path( __FILE__ ) . 'public/class-beer-review-dashboard-public.php';
+include plugin_dir_path( __FILE__ ) . 'public/beer-review-dashboard-public-display.php';
 include plugin_dir_path( __FILE__ ) . 'utilities/class-beer-review-dashboard.php';
 include plugin_dir_path( __FILE__ ) . 'data/api.php';
 include plugin_dir_path( __FILE__ ) . 'data/untappdapi.php';
@@ -68,3 +69,15 @@ add_action('admin_menu', 'review_admin_menu');
 function reviewsettings(){ 
 	require_once plugin_dir_path( __FILE__ ) . 'admin/review-dashboard.php';
 }
+
+/** Setup shortcode */
+
+function beer_review_list(){
+	return beerInformation() . userReview();
+}
+
+function register_shortcodes(){
+	add_shortcode('beer-review-list', 'beer_review_list');
+}
+
+add_action('init', 'register_shortcodes');

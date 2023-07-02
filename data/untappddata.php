@@ -13,6 +13,7 @@ class UntappdData extends UntappdApi
             if($limit <= 10){
                 $this->cleandata[$limit]["created"] = $item['created_at'];
                 $this->cleandata[$limit]["rating"] = $item['rating_score'];
+                $this->cleandata[$limit]["checkin_comment"] = $item['checkin_comment'];
                 $this->cleandata[$limit]["first_name"] = $item["user"]['first_name'];
                 $this->cleandata[$limit]["last_name"] = $item["user"]['last_name'];
                 $this->cleandata[$limit]["user_avatar"] = $item["user"]['user_avatar'];

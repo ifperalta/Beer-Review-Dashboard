@@ -1,4 +1,87 @@
-/**
- * All of the CSS for your public-facing functionality should be
- * included in this file.
- */
+.border{
+    border: 1px solid #e5e5e5 !important;
+}
+
+.review-container{
+    width: 100%;
+    padding: 20px;
+}
+
+.review-row{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.review-row::after{
+    content: "";
+	display: table;
+	clear: both; 
+}
+
+.review-card{
+    padding: 15px;
+}
+
+.review-col-15{
+    width: 15%;
+    float: left;
+    padding: 10px;
+}
+
+.review-col-25{
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+
+.review-col-30{
+    width: 30%;
+    float: left;
+    padding: 10px;
+}
+
+.review-col-50{
+    width: 45%;
+    float: left;
+    padding: 10px;
+}
+
+.review-col-75{
+    width: 70%;
+    float: left;
+    padding: 10px;
+}
+
+.review-col-full{
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+.text-align-right{
+    text-align: right;
+}
+
+.text-format{
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.text-format-p{
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+}
+
+.size-25{
+    font-size: 25pt;
+}
+
+.size-15{
+    font-size: 15pt;
+}
