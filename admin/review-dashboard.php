@@ -36,8 +36,8 @@ if(isset($_POST['submit-import'])){
                 </div> 
 
                 <div class="div-wrapper">
-                    <h2>Shortcode</h2>
-                    <input type="text" name="clientsecret" id="inputfield" placeholder="Client Secret"  value="['beer-review']" />
+                    <h2>Insert the shortcode in page HTML Editor</h2>
+                    <input type="text" name="clientsecret" id="inputfield" placeholder="Client Secret"  value="[beer-review-list]" />
                 </div> 
 
                 <div class="div-wrapper">
