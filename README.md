@@ -8,7 +8,7 @@
 - Activate the plugin in the WP admin dashboard
 - Go to -> Review Setting dashboard
 - Paste your API credentials - client token, secret token, clientID and number of reviews you want to display in the page
-- Click the button "Import Untappd Review" to create a dumpy copy of the data into a local json (saves you for many api calls)
+- Click the button "Import Untappd Review" to create a copy of the data into a local json (saves you from multiple api calls)
 - Create a page and embed the shortcode [beer-review-list]
 - Save the page and you are all set!
  
