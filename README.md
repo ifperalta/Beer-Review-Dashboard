@@ -12,7 +12,7 @@
   - Create a page and embed the shortcode [beer-review-list]
   - Save the page and you are all set!
  
-## Basic Functionalities
+## Basic Functionality
 - Reusable Wordpress Plugin
 - Admin dashboard to manage the API credentials
 - Plugin shortcode
