@@ -18,4 +18,4 @@
 - Plugin shortcode
 
 ## What's not
-- Non responsive to tablet and small devices
+- Front-end is non-responsive to tablet and small devices
