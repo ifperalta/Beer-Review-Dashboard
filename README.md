@@ -16,3 +16,6 @@
 - Reusable Wordpress Plugin
 - Admin dashboard to manage the API credentials
 - Plugin shortcode
+
+## What's not
+- Non responsive to tablet and small devices
