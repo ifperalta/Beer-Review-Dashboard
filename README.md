@@ -2,6 +2,7 @@
 http://3.238.184.12/
 
 ## Overview 
+This plugin is a working prototype with basic functionality to connect to Untappd API and import latest reviews.  
 
 ## How to run 
 - Cloning the repository to your Wp /plugin directory
