@@ -1,4 +1,12 @@
 <?php
+/**
+ * The admin-specific functionality of the plugin.
+ *
+ * @link       https://ianperalta.dev
+ * @since      1.0.0
+ *
+*/
+
 if(isset($_POST['submit'])){
     $config = array(
         "clientid" => $_POST['clientid'],
