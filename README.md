@@ -4,13 +4,12 @@
 ## Overview 
 
 ## How to run 
-- Cloning the repository
-  - Paste this to your /plugin directory
-  - Activate the plugin in the wp backend
-  - Go to -> Review Setting dashboard
-  - Paste your API credentials ( client token and secret token)
-  - Create a page and embed the shortcode [beer-review-list]
-  - Save the page and you are all set!
+- Cloning the repository to your Wp /plugin directory
+- Activate the plugin in the WP admin dashboard
+- Go to -> Review Setting dashboard
+- Paste your API credentials - client token, secret token, clientID and number of reviews you want to display in the page 
+- Create a page and embed the shortcode [beer-review-list]
+- Save the page and you are all set!
  
 ## Basic Functionality
 - Reusable Wordpress Plugin
