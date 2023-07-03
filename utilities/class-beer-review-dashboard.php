@@ -1,31 +1,15 @@
 <?php
 
 /**
- * The file that defines the core plugin class
- *
- * A class definition that includes attributes and functions used across both the
- * public-facing side of the site and the admin area.
- *
- * @link       https://ianperalta.dev
- * @since      1.0.0
- *
- * @package    Beer_Review_Dashboard
- * @subpackage Beer_Review_Dashboard/includes
- */
-
-/**
  * The core plugin class.
  *
- * This is used to define internationalization, admin-specific hooks, and
- * public-facing site hooks.
- *
- * Also maintains the unique identifier of this plugin as well as the current
- * version of the plugin.
- *
+ * Admin-specific hooks, and public-facing site hooks.
+ **
  * @since      1.0.0
  * @package    Beer_Review_Dashboard
  * @subpackage Beer_Review_Dashboard/includes
  * @author     Ian Peralta <ifransperalta@gmail.com>
+ * @link       https://ianperalta.dev
  */
 class Beer_Review_Dashboard {
 

@@ -3,11 +3,6 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       https://ianperalta.dev
- * @since      1.0.0
- *
- * @package    Beer_Review_Dashboard
- * @subpackage Beer_Review_Dashboard/public
  */
 
 class Beer_Review_Dashboard_Public {
