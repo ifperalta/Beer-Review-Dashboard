@@ -18,5 +18,5 @@ This plugin is a working prototype with basic functionality to connect to Untapp
 - Admin dashboard to manage the API credentials
 - Plugin shortcode
 
-## What's not
+## To Implement
 - Front-end is non-responsive to tablet and small devices
