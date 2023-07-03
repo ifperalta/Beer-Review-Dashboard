@@ -1,18 +1,21 @@
 ## Demo
-- it's coming soon
+http://3.238.184.12/
 
 ## Overview 
 
 ## How to run 
-- Cloning the repository
-  - paste this to your /plugin directory
-  - activate the plugin in the wp backend
-  - Go to -> Review Setting dashboard
-  - Paste your API credentials ( client token and secret token)
-  - Create a page and embed the shortcode [beer-review-list]
-  - Save the page and you are all set!
+- Cloning the repository to your Wp /plugin directory
+- Activate the plugin in the WP admin dashboard
+- Go to -> Review Setting dashboard
+- Paste your API credentials - client token, secret token, clientID and number of reviews you want to display in the page
+- Click the button "Import Untappd Review" to create a copy of the data into a local json (saves you from multiple api calls)
+- Create a page and embed the shortcode [beer-review-list]
+- Save the page and you are all set!
  
-## Basic Functionalities
+## Basic Functionality
 - Reusable Wordpress Plugin
 - Admin dashboard to manage the API credentials
 - Plugin shortcode
+
+## What's not
+- Front-end is non-responsive to tablet and small devices
