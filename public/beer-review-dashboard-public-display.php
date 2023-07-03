@@ -17,11 +17,12 @@ function beerInformation(){
                                     </div>   
                                     <div class="review-col-75">
                                         <div class="review-row">
-                                            <div class="review-col-12">
+                                            <div class="review-col-75">
                                                 <h1 class="text-format size-25"><b>'. $item["beer_name"].'</b></h1>
+                                                <label class="text-format size-15"><i>'. $item["brewery_name"].'</i></label>
                                             </div>
-                                            <div class="review-col-12">
-                                                <h3 class="text-format size-15"><i>'. $item["brewery_name"].'</i></h3>
+                                            <div class="review-col-25">
+                                                <img src="'. $item["brewery_label"] .'" class="small-logo float-right"  />
                                             </div>
                                         </div>
                                         <div class="review-row">   
